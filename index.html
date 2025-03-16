@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artist Showcase</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Artist Showcase</h1>
+        <nav>
+            <ul>
+                <li><a href="#home" data-translate="home">Home</a></li>
+                <li><a href="#resume" data-translate="resume">Resume</a></li>
+                <li><a href="#gallery" data-translate="gallery">Gallery</a></li>
+                <li><a href="#contact" data-translate="contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="language-switcher">
+            <button onclick="switchLanguage('en')">EN</button>
+            <button onclick="switchLanguage('zh')">中</button>
+            <button onclick="switchLanguage('ja')">日</button>
+        </div>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2 data-translate="welcome">Welcome to My Art</h2>
+            <p data-translate="intro">Explore my collection of artwork and learn more about my journey.</p>
+        </section>
+
+        <section id="resume">
+            <h2 data-translate="resume">Resume</h2>
+            <p data-translate="resume-desc">Here you can find my professional background and achievements.</p>
+        </section>
+
+        <section id="gallery">
+            <h2 data-translate="gallery">Gallery</h2>
+            <p data-translate="gallery-desc">A showcase of my latest and most significant works.</p>
+        </section>
+
+        <section id="contact">
+            <h2 data-translate="contact">Contact</h2>
+            <p data-translate="contact-desc">Get in touch with me for collaborations or inquiries.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Artist Showcase</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
